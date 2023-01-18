@@ -1,0 +1,143 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    :root {
+        --header-height: 60px;
+        --nav-height: 0px;
+        --sort-bar-height: var(--header-search-area-height);
+    }
+    
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .top-triangle-popup::before {
+        display: none;
+    }
+
+    .header-cart-inside {
+        position: fixed;
+        top: var(--header-height);
+        width: unset;
+        left: 0;
+        right: 0;
+        padding: 0 calc((100vw - 644px) / 2);
+    }
+
+    .header-sort-bar {
+        display: flex;
+    }
+
+    .app-container {
+        padding-top: 0;
+    }
+
+    .mobile-category-list {
+        display: flex;
+    }
+
+    .footer-heading {
+        padding-top: 12px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .mobile-category-list {
+        margin: 20px 0;
+    }
+
+    .header-search-area {
+        margin-left: unset;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        padding: 0 16px;
+    }
+
+    .header__logo {
+        margin-bottom: unset;
+    }
+
+    .header__logo-img {
+        height: 42px;
+    }
+
+    .header-search-area-trigger {
+        display: flex;
+    }
+
+    .header-search-area {
+        --verticalBeginning: calc(var(--header-height) / 2);
+        --verticalEnd: var(--header-height);
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        margin: unset;
+        padding-right: 8px;
+        display: none;
+        animation: slideDown linear 0.2s forwards, fadeIn linear 0.2s;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .search-area-history-list {
+        position: fixed;
+        z-index: 0;
+        top: calc(var(--header-search-area-height) + var(--header-height));
+        left: 0;
+        right: 0;
+    }
+
+    .header-cart-icon {
+        font-size: 2.6rem;
+    }
+    
+    .mobile-category-list {
+        margin: 16px 8px;
+    }
+
+    .content-body {
+        margin: 0 8px;
+    }    
+
+    .content-pagination {
+        margin-top: 20px;
+    }
+
+    .pagination-item:not(:first-child) a {
+        margin-left: unset;
+    }
+    
+    .pagination-item a {
+        min-width: 36px;
+        font-size: 1.6rem;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-download-app {
+        justify-content: center;
+    }
+
+    .footer-download-app-stores {
+        flex: unset;
+        text-align: left;
+    }
+}
