@@ -1119,7 +1119,7 @@ i.product-item-heart-icon-filled,
 }
 
 .footer-item {
-    padding: 2px 0;
+    padding: 4px 0;
 }
 
 .footer-heading {
@@ -1131,7 +1131,7 @@ i.product-item-heart-icon-filled,
 .footer a {
     text-decoration: none;
     color: var(--gray);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: inline-flex;
     align-items: center;
 }
@@ -1141,8 +1141,8 @@ i.product-item-heart-icon-filled,
 }
 
 .footer-item-icon {
-    font-size: 1.8rem;
-    margin-right: 8px;
+    font-size: 1.6rem;
+    margin-right: 6px;
 }
 
 .footer-download-app {

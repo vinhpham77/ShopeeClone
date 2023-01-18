@@ -38,6 +38,18 @@
     .footer-heading {
         padding-top: 12px;
     }
+
+    .footer-heading {
+        font-size: 1.6rem;
+    }
+
+    .footer-item {
+        padding: 6px 0;
+    }
+
+    .footer a {
+        font-size: 1.4rem;
+    }
 }
 
 /* Tablet */
