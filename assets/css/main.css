@@ -549,7 +549,7 @@
     cursor: pointer;
 }
 
-.header-cart-wrapper:hover .header-cart-inside {
+#header-cart-inside-toggle:checked ~ .header-cart-wrapper .header-cart-inside {
     display: block;
 }
 
